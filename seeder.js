@@ -51,7 +51,7 @@ const importData = async () => {
     await Lapangan.insertMany(lapanganData);
 
     console.log('✅ Data berhasil di-import!');
-    process.exit();
+    process.exit(0);
   } catch (error) {
     console.error(`Error: ${error.message}`);
     process.exit(1);
@@ -68,7 +68,7 @@ const destroyData = async () => {
     await User.deleteMany();
 
     console.log('✅ Data berhasil di-destroy!');
-    process.exit();
+    process.exit(0);
   } catch (error) {
     console.error(`Error: ${error.message}`);
     process.exit(1);

@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["node", "server.js"]
+CMD ["sh", "-c", "npm run seed && npm start"]

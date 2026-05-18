@@ -3,6 +3,5 @@ npm-debug.log
 .env
 .git
 .gitignore
-data/
 .vscode
 .idea
